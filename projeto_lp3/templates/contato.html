@@ -3,5 +3,18 @@
 {% block title %}Contato{% endblock %}
 
 {% block content %}
-<h1>Entre em contato</h1>
+<h1 style="text-align: center;">Entre em contato</h1>
+<center>
+<form>
+
+    <p><label for="name">
+        Nome: <input type="text" id="name" name="user_name" size="25">
+    </label></p>
+    <p><label for="email">
+        Email: <input type="text" id="email" name="user_email" size="25">
+    </label></p>
+    <p><button type="submit">Confirmar os Dados</button></p>
+
+</form>
+</center>
 {% endblock %}

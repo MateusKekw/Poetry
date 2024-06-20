@@ -3,16 +3,20 @@
 {% block title %}Produtos{% endblock %}
 
 {% block content %}
+
+<center>
     <h1>Produtos</h1>
 
     {% if produtos%}
-        <p>Confira nossos produtos abaixo</p>
+        <p style="text-align: center;">Confira nossos produtos abaixo</p>
         {% for produto in produtos %}
+            <img src="{{ produto.imagem }}" alt="{{ produto.nome }}">
             <h2>{{ produto.nome }}</h2>
             <p>{{ produto.descricao }}</p>
+            <p> </p>
         {% endfor %}
         {% else %}
         <p>Sem Produtos =[ </p>
     {% endif %}
-
+</center>
 {% endblock %}
